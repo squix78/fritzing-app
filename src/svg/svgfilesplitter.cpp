@@ -482,7 +482,7 @@ bool SvgFileSplitter::normalizeFontSize(QDomElement & element, const char * attr
 		QString string;
 		QTextStream stream(&string);
 		element.save(stream, 0);
-		DebugDialog::debug("bad font-size " + string);
+		//DebugDialog::debug("bad font-size " + string);
 	}
 
 	element.setAttribute(attributeName, QString::number(n));
@@ -500,7 +500,7 @@ bool SvgFileSplitter::normalizeAttribute(QDomElement & element, const char * att
 		QString string;
 		QTextStream stream(&string);
 		element.save(stream, 0);
-		DebugDialog::debug("bad attribute " + string);
+		//DebugDialog::debug("bad attribute " + string);
 	}
 
 	element.setAttribute(attributeName, QString::number(n));
